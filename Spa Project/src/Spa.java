@@ -315,9 +315,10 @@ public class Spa extends Application {
 			 cancelPane.add(homescene5,1, 2);
   }
   private void connectToSQL() {
+	  //
 	  String dbURL = "jdbc:mysql://localhost:3306/myspa";
-      String username = "root";
-      String password = "Trevibum29";
+      String username = "yourusername";
+      String password = "yourpassword";
   try (Connection conn = DriverManager.getConnection(dbURL, username, password)) {
 	     
 	  String sql = "insert into customer (first_name, last_name, address_line1,address_line2,city,zipcode,phone_number,email)"
